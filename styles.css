@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    --very-dark-blue: hsl(233, 47%, 7%); 
+    --dark-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%); /*for the accent*/
+    --white: hsl(0, 0%, 100%);
+    --main-para-white: hsla(0, 0%, 100%, 0.75);
+    --stat-heading-white: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-family: 'Inter', sans-serif; use when required*/
+}
+
+
+body{
+    background: var(--very-dark-blue);
+}
+.card{
+    background: var(--dark-blue);
+    color: var(--white);
+    
+}
+
+
+@media screen and (max-width: 575px){
+    /* change the max-width to 375px */
+    .card{
+        display: inline-flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+        align-items: center;
+        justify-content: center;
+        
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .image-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        max-width: 60vw;
+        max-height: 50vh;
+    }
+    .main-text{
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        color: var(--white);
+        margin-top: 10px;
+        font-size: 1.6rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    .sub-text{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        margin-top: 10px;
+        color: var(--main-para-white);
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.9;
+    }
+    .list{
+        list-style-type: none;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        font-size: 1.5rem;
+        margin-left: -33px;
+        
+    }
+    span{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 0.8rem;
+        color: var(--stat-heading-white);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #insights{
+        color: var(--soft-violet);
+        font-family: 'Inter', sans-serif;
+        font-size: 1.6rem;
+    }
+}
