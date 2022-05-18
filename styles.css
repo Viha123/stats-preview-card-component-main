@@ -14,11 +14,75 @@
 
 body{
     background: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
 }
+
 .card{
     background: var(--dark-blue);
+    color: var(--white); 
+    display: flex;
+    justify-content: center; 
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 70vw;
+    max-height: 70vh;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.actual-image{
+    max-width: 60vw;
+    max-height: 50vh;
+}
+.main-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     color: var(--white);
-    
+    font-size: 1.6rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+#insights{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--soft-violet);
+    font-size: 1.6rem;
+}
+.sub-text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    color: var(--main-para-white);
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -30px;
+}
+.li{
+    text-align: center;
+}
+span{
+    color: var(--stat-heading-white);
+    font-size: 0.7rem;
+    margin-top: -50px;
+    padding: 0px;
+}
+.stat{
+    text-align: center;
 }
 
 
